@@ -53,9 +53,10 @@ RailsAdmin.config do |config|
 
   RailsAdmin.config do |config|
     config.model 'Photo' do
-      edit do
-        field :image, :paperclip do
-          # configuration here
+      include_all_fields
+      nested do
+        field :photoable do
+          visible false
         end
       end
     end
