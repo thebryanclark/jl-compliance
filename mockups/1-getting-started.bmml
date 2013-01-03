@@ -47,7 +47,7 @@
             <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="105" w="200" h="19" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="0">
               <controlProperties>
                 <align>center</align>
-                <size>20</size>
+                <size>14</size>
                 <text>Judlau%20Compliance</text>
               </controlProperties>
             </control>
@@ -80,24 +80,24 @@
         <bgPattern>topBlueBottom</bgPattern>
       </controlProperties>
     </control>
-    <control controlID="71" controlTypeID="com.balsamiq.mockups::Paragraph" x="963" y="118" w="200" h="19" measuredW="200" measuredH="80" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Paragraph" x="963" y="122" w="200" h="19" measuredW="200" measuredH="80" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
-        <size>20</size>
+        <size>14</size>
         <text>Judlau%20Compliance</text>
       </controlProperties>
     </control>
-    <control controlID="72" controlTypeID="com.balsamiq.mockups::PointyButton" x="959" y="406" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::PointyButton" x="950" y="118" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <direction>left</direction>
         <text>Back</text>
       </controlProperties>
     </control>
-    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="994" y="410" w="138" h="19" measuredW="200" measuredH="80" zOrder="17" locked="false" isInGroup="-1">
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="972" y="410" w="182" h="19" measuredW="200" measuredH="80" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
         <size>13</size>
-        <text>63rd%20Street</text>
+        <text>East%20Side%20Access%20Tunnels</text>
       </controlProperties>
     </control>
     <control controlID="75" controlTypeID="com.balsamiq.mockups::iPhone" x="12" y="13" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="1" locked="false" isInGroup="-1"/>
@@ -144,7 +144,7 @@
     </control>
     <control controlID="85" controlTypeID="__group__" x="938" y="531" w="251" h="80" measuredW="251" measuredH="80" zOrder="18" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="0" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="0" locked="false" isInGroup="85">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="0" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="0" locked="false" isInGroup="85">
           <controlProperties>
             <text>3</text>
           </controlProperties>
