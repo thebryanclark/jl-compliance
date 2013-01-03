@@ -5,5 +5,8 @@ class Subcontractor < ActiveRecord::Base
                   :equipment_labeled, 
                   :employees_work_elsewhere, 
                   :employee_count,
-                  :notes
+                  :notes,
+                  :job_id
+
+  belongs_to :job
 end
