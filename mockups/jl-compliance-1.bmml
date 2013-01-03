@@ -1,98 +1,164 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1088" measuredH="523" mockupW="1001" mockupH="510">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1204" measuredH="611" mockupW="1192" mockupH="598">
   <controls>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::CallOut" x="424" y="79" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="7" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>1</text>
-      </controlProperties>
-    </control>
-    <control controlID="23" controlTypeID="com.balsamiq.mockups::Paragraph" x="475" y="79" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="8" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>On-site%20project%20team%20member%20taps%20the%20Compliance%20application%20from%20the%20menu%20of%20their%20mobile%20device</text>
-      </controlProperties>
-    </control>
-    <control controlID="25" controlTypeID="com.balsamiq.mockups::Arrow" x="306" y="159" w="476" h="61" measuredW="150" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Arrow" x="231" y="159" w="314" h="61" measuredW="150" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <direction>top</direction>
         <leftArrow>false</leftArrow>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="27" controlTypeID="com.balsamiq.mockups::Icon" x="277" y="143" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="62" controlTypeID="__group__" x="294" y="79" w="251" h="80" measuredW="251" measuredH="80" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="0" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="0" locked="false" isInGroup="62">
+          <controlProperties>
+            <text>1</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="51" y="0" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="62">
+          <controlProperties>
+            <text>On-site%20project%20team%20member%20taps%20the%20Compliance%20application%20from%20the%20menu%20of%20their%20mobile%20device</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="63" controlTypeID="__group__" x="353" y="235" w="192" h="79" measuredW="192" measuredH="79" zOrder="11" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="153" y="0" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="0" locked="false" isInGroup="63">
+          <controlProperties>
+            <text>2</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="0" y="0" w="144" h="79" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="63">
+          <controlProperties>
+            <text>User%20is%20presented%20with%20job%20sites%20to%20search%20for%20data%20on</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="64" controlTypeID="__group__" x="553" y="13" w="282" h="510" measuredW="282" measuredH="510" zOrder="10" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="__group__" x="0" y="0" w="282" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="64">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="0">
+              <controlProperties>
+                <bgPattern>topOnly</bgPattern>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="105" w="200" h="19" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="0">
+              <controlProperties>
+                <align>center</align>
+                <size>20</size>
+                <text>Judlau%20Compliance</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Label" x="37" y="166" w="-1" h="-1" measuredW="100" measuredH="21" zOrder="1" locked="false" isInGroup="64">
+          <controlProperties>
+            <text>Select%20Job%20Site%3A</text>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="34" y="190" w="-1" h="-1" measuredW="215" measuredH="184" zOrder="2" locked="false" isInGroup="64">
+          <controlProperties>
+            <text>*%2063rd%20Street%2C%20%3E%0A*%20Culver%20Line%20Viaduct%2C%20%3E%0A*%20East%20Side%20Access%20Tunnels%2C%20%3E%0A*%20%20MED%20609%2C%20%3E%0AColumbus%20Circle%20Station%2C%20%3E%0ASouth%20Ferry%20Terminal%2C%20%3E</text>
+          </controlProperties>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Label" x="959" y="179" w="-1" h="-1" measuredW="191" measuredH="21" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>15110456</color>
-        <icon>AsteriskIcon%7Csmall</icon>
+        <text>Select%20Minority%20Contractor%20Type%3A</text>
       </controlProperties>
     </control>
-    <control controlID="30" controlTypeID="com.balsamiq.mockups::iPhone" x="87" y="13" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
-    <control controlID="31" controlTypeID="com.balsamiq.mockups::IconLabel" x="155" y="138" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="956" y="203" w="-1" h="-1" measuredW="215" measuredH="97" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Subcontractors%2C%202%0ASuppliers%2C%205%0ATruckers%2C%200</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::iPhone" x="922" y="13" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlueBottom</bgPattern>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Paragraph" x="963" y="118" w="200" h="19" measuredW="200" measuredH="80" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>20</size>
+        <text>Judlau%20Compliance</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::PointyButton" x="959" y="406" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <text>Back</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="994" y="410" w="138" h="19" measuredW="200" measuredH="80" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <size>13</size>
+        <text>63rd%20Street</text>
+      </controlProperties>
+    </control>
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::iPhone" x="12" y="13" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::IconLabel" x="80" y="138" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="2" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>EmailIcon%7Clarge</icon>
         <text>Mail</text>
       </controlProperties>
     </control>
-    <control controlID="32" controlTypeID="com.balsamiq.mockups::IconLabel" x="155" y="318" w="-1" h="-1" measuredW="52" measuredH="69" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::IconLabel" x="80" y="318" w="-1" h="-1" measuredW="52" measuredH="69" zOrder="3" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CameraIcon%7Clarge</icon>
         <text>Camera</text>
       </controlProperties>
     </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::IconLabel" x="155" y="234" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::IconLabel" x="80" y="234" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="4" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CommentsIcon%7Clarge</icon>
         <text>Chat</text>
       </controlProperties>
     </control>
-    <control controlID="34" controlTypeID="com.balsamiq.mockups::IconLabel" x="252" y="234" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="4" locked="false" isInGroup="-1">
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::IconLabel" x="177" y="234" w="-1" h="-1" measuredW="48" measuredH="69" zOrder="5" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>TelephoneIcon%7Clarge</icon>
         <text>Phone</text>
       </controlProperties>
     </control>
-    <control controlID="35" controlTypeID="com.balsamiq.mockups::IconLabel" x="221" y="134" w="-1" h="-1" measuredW="110" measuredH="69" zOrder="5" locked="false" isInGroup="-1">
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::IconLabel" x="146" y="134" w="-1" h="-1" measuredW="110" measuredH="69" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Judlau%20Compliance</text>
       </controlProperties>
     </control>
-    <control controlID="36" controlTypeID="com.balsamiq.mockups::IconLabel" x="250" y="318" w="-1" h="-1" measuredW="56" measuredH="69" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::IconLabel" x="175" y="318" w="-1" h="-1" measuredW="56" measuredH="69" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>CalendarIcon%7Clarge</icon>
         <text>Calendar</text>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="__group__" x="806" y="13" w="282" h="510" measuredW="282" measuredH="510" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::Icon" x="202" y="143" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>15110456</color>
+        <icon>AsteriskIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="__group__" x="938" y="531" w="251" h="80" measuredW="251" measuredH="80" zOrder="18" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="44">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="0" w="-1" h="-1" measuredW="38" measuredH="43" zOrder="0" locked="false" isInGroup="85">
           <controlProperties>
-            <bgPattern>topOnly</bgPattern>
+            <text>3</text>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="105" w="200" h="19" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="44">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="51" y="0" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="85">
           <controlProperties>
-            <align>center</align>
-            <size>20</size>
-            <text>Judlau%20Compliance</text>
+            <text>Job%20is%20broken%20down%20into%20minority%20contractor%20types</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::Label" x="843" y="179" w="-1" h="-1" measuredW="100" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::Title" x="497" y="531" w="-1" h="-1" measuredW="280" measuredH="50" zOrder="19" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Select%20Job%20Site%3A</text>
-      </controlProperties>
-    </control>
-    <control controlID="46" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="840" y="203" w="-1" h="-1" measuredW="215" measuredH="184" zOrder="13" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>*%2063rd%20Street%2C%20%3E%0A*%20Culver%20Line%20Viaduct%2C%20%3E%0A*%20East%20Side%20Access%20Tunnels%2C%20%3E%0A*%20%20MED%20609%2C%20%3E%20%0AColumbus%20Circle%20Station%2C%20%3E%0ASouth%20Ferry%20Terminal%2C%20%3E</text>
-      </controlProperties>
-    </control>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="746" y="264" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="14" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>2</text>
-      </controlProperties>
-    </control>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::Paragraph" x="593" y="264" w="144" h="79" measuredW="200" measuredH="80" zOrder="15" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>User%20is%20presented%20with%20job%20sites%20to%20search%20for%20data%20on</text>
+        <text>Getting%20Started</text>
       </controlProperties>
     </control>
   </controls>
