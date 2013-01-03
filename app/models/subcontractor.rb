@@ -8,5 +8,5 @@ class Subcontractor < ActiveRecord::Base
                   :notes,
                   :job_id
 
-  belongs_to :job
+  belongs_to :job, inverse_of: :subcontractors
 end
