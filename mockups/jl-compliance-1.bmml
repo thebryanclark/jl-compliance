@@ -1,6 +1,6 @@
 <mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1088" measuredH="523" mockupW="1001" mockupH="510">
   <controls>
-    <control controlID="22" controlTypeID="com.balsamiq.mockups::CallOut" x="424" y="79" w="-1" h="-1" measuredW="36" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="22" controlTypeID="com.balsamiq.mockups::CallOut" x="424" y="79" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
@@ -82,10 +82,10 @@
     </control>
     <control controlID="46" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="840" y="203" w="-1" h="-1" measuredW="215" measuredH="184" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>*%20MED%20609%2C%20%3E%0A*%20East%20Side%20Access%20Tunnels%2C%20%3E%0A*%20Culver%20Line%20Viaduct%2C%20%3E%0A*%2063rd%20Street%2C%20%3E%0AColumbus%20Circle%20Station%2C%20%3E%0ASouth%20Ferry%20Terminal%2C%20%3E</text>
+        <text>*%2063rd%20Street%2C%20%3E%0A*%20Culver%20Line%20Viaduct%2C%20%3E%0A*%20East%20Side%20Access%20Tunnels%2C%20%3E%0A*%20%20MED%20609%2C%20%3E%20%0AColumbus%20Circle%20Station%2C%20%3E%0ASouth%20Ferry%20Terminal%2C%20%3E</text>
       </controlProperties>
     </control>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="746" y="264" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::CallOut" x="746" y="264" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
         <text>2</text>
       </controlProperties>
