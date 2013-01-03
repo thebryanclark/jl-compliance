@@ -11,6 +11,10 @@ class Subcontractor < ActiveRecord::Base
   accepts_nested_attributes_for :equipment, allow_destroy: true
   attr_accessible :equipment_attributes, allow_destroy: true
 
+  has_many :scopes
+  accepts_nested_attributes_for :scopes, allow_destroy: true
+  attr_accessible :scopes_attributes, allow_destroy: true
+
   belongs_to :job, inverse_of: :subcontractors
   attr_accessible :job_id
 end
