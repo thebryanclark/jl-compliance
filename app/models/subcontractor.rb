@@ -5,8 +5,12 @@ class Subcontractor < ActiveRecord::Base
                   :equipment_labeled, 
                   :employees_work_elsewhere, 
                   :employee_count,
-                  :notes,
-                  :job_id
+                  :notes
+
+  has_many :equipment
+  accepts_nested_attributes_for :equipment, allow_destroy: true
+  attr_accessible :equipment_attributes, allow_destroy: true
 
   belongs_to :job, inverse_of: :subcontractors
+  attr_accessible :job_id
 end
