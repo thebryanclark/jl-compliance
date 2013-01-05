@@ -17,4 +17,7 @@ class Subcontractor < ActiveRecord::Base
 
   belongs_to :job, inverse_of: :subcontractors
   attr_accessible :job_id
+
+  validates :job, presence: true
+  validates :name, presence: true
 end
