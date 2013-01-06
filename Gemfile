@@ -8,6 +8,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
 	gem 'sqlite3'
+  gem 'pry'
 end
 
 # Gems used only for assets and not required

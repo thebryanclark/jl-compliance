@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130105191802) do
+ActiveRecord::Schema.define(:version => 20130106070707) do
 
   create_table "equipment", :force => true do |t|
     t.string   "title",            :null => false
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(:version => 20130105191802) do
     t.datetime "updated_at",       :null => false
   end
 
+  create_table "subcontractor_trucks", :force => true do |t|
+    t.string   "plate",            :null => false
+    t.string   "driver_name"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "subcontractor_id"
+  end
+
   create_table "subcontractors", :force => true do |t|
     t.string   "name",                                        :null => false
     t.string   "foreman_name"
@@ -57,6 +65,29 @@ ActiveRecord::Schema.define(:version => 20130105191802) do
     t.datetime "created_at",                                  :null => false
     t.datetime "updated_at",                                  :null => false
     t.integer  "job_id",                                      :null => false
+  end
+
+  create_table "supplier_trucks", :force => true do |t|
+    t.string   "plate",       :null => false
+    t.string   "driver_name"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "supplier_id"
+  end
+
+  create_table "suppliers", :force => true do |t|
+    t.string   "name",       :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "job_id"
+  end
+
+  create_table "tickets", :force => true do |t|
+    t.string   "number",                               :null => false
+    t.boolean  "approved",          :default => false, :null => false
+    t.datetime "created_at",                           :null => false
+    t.datetime "updated_at",                           :null => false
+    t.integer  "supplier_truck_id"
   end
 
   create_table "users", :force => true do |t|
