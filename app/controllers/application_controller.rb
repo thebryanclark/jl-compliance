@@ -3,6 +3,8 @@ class ApplicationController < ActionController::Base
 
   before_filter :reload_rails_admin, if: :rails_admin_path?
 
+  layout 'application'
+
 private
 
   def reload_rails_admin
