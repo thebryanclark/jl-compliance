@@ -1,0 +1,7 @@
+<ul data-role="listview" data-inset="true" data-filter="true">
+  <% @jobs.each do |job| %> 
+  <li>
+    <%= link_to job.name, job %>
+  </li>
+  <% end %> 
+</ul>
