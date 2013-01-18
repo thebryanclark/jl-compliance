@@ -1,12 +1,21 @@
 <ul data-role="listview" data-inset="true" data-filter="true">
   
-  <li><%= link_to "Subcontractors", job_subcontractors_path(@job) %></li>
-  <span class="ui-li-count"><%= @job.subcontractors.count %></span>
+  <li>
+    <%= link_to "Subcontractors", job_subcontractors_path(@job) %>
+    <span class="ui-li-count"><%= @job.subcontractors.count %></span>
+  </li>
+  
 
-  <li><%= link_to "Suppliers", @job %></li>
-  <span class="ui-li-count"><%= @job.suppliers.count %></span>
+  <li>
+    <%= link_to "Suppliers", @job %>
+    <span class="ui-li-count"><%= @job.suppliers.count %></span>
+  </li>
+  
 
-  <li><%= link_to "Truckers", @job %></li>
-  <span class="ui-li-count"><%= @job.subcontractor_trucks.count %></span>
+  <li>
+    <%= link_to "Truckers", @job %>
+    <span class="ui-li-count"><%= @job.subcontractor_trucks.count %></span>
+  </li>
+  
 
 </ul>
