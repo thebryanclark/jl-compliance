@@ -2,6 +2,9 @@
   <% @subcontractors.each do |subcontractor| %> 
   <li>
     <%= subcontractor.name %>
+    <% if subcontractor.foreman_name.present? %> 
+      <div class="item_info"><%= "Foreman: #{subcontractor.foreman_name}" %></div>
+    <% end %> 
   </li>
   <% end %> 
 </ul>

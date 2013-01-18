@@ -11,3 +11,6 @@
  *= require_self
  *= require_tree .
  */
+.item_info {
+  font-weight: normal;
+}

@@ -7,7 +7,13 @@ class ApplicationController < ActionController::Base
 
   layout 'application'
 
+  helper_method :rails_admin_view?
+
 private
+
+  def rails_admin_view?
+    request.path.starts_with? "/admin"
+  end
 
   def infer_page_title
     if params[:action] == 'index'
