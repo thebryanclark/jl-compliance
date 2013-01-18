@@ -11,8 +11,12 @@ class ApplicationController < ActionController::Base
 
 private
 
+  EXCLUDE_MOBILE_PATHS = ['admin', 'users']
+
   def rails_admin_view?
-    request.path.starts_with? "/admin"
+    EXCLUDE_MOBILE_PATHS.any? do |path|
+      request.path.starts_with? "/#{path}"
+    end
   end
 
   def infer_page_title
