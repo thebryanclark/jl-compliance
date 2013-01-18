@@ -1,0 +1,38 @@
+<ul data-role="listview">
+  
+  <li data-role="list-divider">Information</li>
+  <li><div><ul data-role="listview">
+    <li><%=           "Foreman: #{@subcontractor.foreman_name}" %></li>
+    <li><%= "Employees present: #{@subcontractor.employee_count}" %></li>
+    
+    <li><%= if @subcontractor.foreman_directs_work?     then "Y" else "?" end %>
+        Foreman directs work</li>
+    <li><%= if @subcontractor.being_supervised?         then "Y" else "?" end %>
+        Is being supervised</li>
+    <li><%= if @subcontractor.equipment_labeled?        then "Y" else "?" end %>
+        Name or logo appears on equipment</li>
+    <li><%= if @subcontractor.employees_work_elsewhere? then "Y" else "?" end %>
+        Employees work with other firms</li>
+                  
+  </ul></div></li>
+  
+  <li data-role="list-divider">Notes</li>
+  <li>
+    <%= @subcontractor.notes %>
+  </li>
+  
+  <li data-role="list-divider">Equipment</li>
+  <li><div><ul data-role="listview">
+    <% @subcontractor.equipment.all.each do |anequipment| %> 
+      <li><%= anequipment.title %></li>
+    <% end %> 
+  </ul></div></li>
+  
+  <li data-role="list-divider">Scopes</li>
+  <li><div><ul data-role="listview">
+    <% @subcontractor.scopes.all.each do |scope| %> 
+      <li><%= scope.title %></li>
+    <% end %> 
+  </ul></div></li>
+
+</ul>

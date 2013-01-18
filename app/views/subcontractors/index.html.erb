@@ -1,10 +1,12 @@
 <ul data-role="listview" data-inset="true" data-filter="true">
   <% @subcontractors.each do |subcontractor| %> 
-  <li>
-    <%= subcontractor.name %>
-    <% if subcontractor.foreman_name.present? %> 
-      <div class="item_info"><%= "Foreman: #{subcontractor.foreman_name}" %></div>
-    <% end %> 
-  </li>
+    <li>
+      <%= link_to subcontractor do %>
+        <%= subcontractor.name %>
+        <% if subcontractor.foreman_name.present? %> 
+          <div class="item_info"><%= "Foreman: #{subcontractor.foreman_name}" %></div>
+        <% end %> 
+      <% end %>   
+    </li>
   <% end %> 
 </ul>

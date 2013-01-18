@@ -66,5 +66,7 @@ JlCompliance::Application.routes.draw do
     resources :subcontractors, only: :index
   end
 
+  resources :subcontractors, only: :show
+
 
 end
