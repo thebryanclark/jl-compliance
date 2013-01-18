@@ -62,7 +62,9 @@ JlCompliance::Application.routes.draw do
 
   root :to => "jobs#index"
 
-  resources :jobs
+  resources :jobs do
+    resources :subcontractors, only: :index
+  end
 
-  
+
 end

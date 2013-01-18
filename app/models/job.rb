@@ -10,4 +10,6 @@ class Job < ActiveRecord::Base
   attr_accessible :suppliers_attributes,    allow_destroy: true
 
   validates :name, presence: true
+
+  has_many :subcontractor_trucks, through: :subcontractors
 end
