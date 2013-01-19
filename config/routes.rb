@@ -64,9 +64,13 @@ JlCompliance::Application.routes.draw do
 
   resources :jobs do
     resources :subcontractors, only: :index
+    resources :supplier_trucks, only: :index
+    resources :subcontractor_trucks, only: :index
   end
 
   resources :subcontractors, only: :show
-
+  resources :supplier_trucks, only: :show
+  resources :subcontractor_trucks, only: :show
+  resources :tickets, only: :show
 
 end

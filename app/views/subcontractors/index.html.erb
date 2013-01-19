@@ -4,7 +4,8 @@
       <%= link_to subcontractor do %>
         <%= subcontractor.name %>
         <% if subcontractor.foreman_name.present? %> 
-          <div class="item_info"><%= "Foreman: #{subcontractor.foreman_name}" %></div>
+          <div class="item_info"><%= "Foreman: #{subcontractor.foreman_name}" %>
+          </div>
         <% end %> 
       <% end %>   
     </li>

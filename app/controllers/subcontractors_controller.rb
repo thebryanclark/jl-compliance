@@ -7,6 +7,6 @@ class SubcontractorsController < ApplicationController
   def show
     @subcontractor = Subcontractor.find(params[:id])
     @title = @subcontractor.name
-    @back_target = "/jobs/#{@subcontractor.job_id}/subcontractors"
+    @back_target = job_subcontractors_path(@subcontractor.job)
   end
 end

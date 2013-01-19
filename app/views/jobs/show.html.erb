@@ -7,13 +7,13 @@
   
 
   <li>
-    <%= link_to "Suppliers", @job %>
-    <span class="ui-li-count"><%= @job.suppliers.count %></span>
+    <%= link_to "Suppliers (truck listing)", job_supplier_trucks_path(@job) %>
+    <span class="ui-li-count"><%= @job.supplier_trucks.count %></span>
   </li>
   
 
   <li>
-    <%= link_to "Truckers", @job %>
+    <%= link_to "Truckers (subcontractor trucks)", job_subcontractor_trucks_path(@job) %>
     <span class="ui-li-count"><%= @job.subcontractor_trucks.count %></span>
   </li>
   

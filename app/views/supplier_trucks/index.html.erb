@@ -1,0 +1,15 @@
+<ul data-role="listview" data-inset="true" data-filter="true">
+  <% @supplier_trucks.each do |supplier_truck| %> 
+    <li>
+      <%= link_to supplier_truck do %>
+        <%= supplier_truck.plate %>
+        <div class="item_info">
+          <%= "#{supplier_truck.supplier_name}" %>
+        </div>
+        <div class="item_info">
+          <%= "#{Ticket.where(:supplier_truck_id => supplier_truck.id).select{|ticket| ticket.approved_date}.count} approved tickets" %>
+        </div>
+      <% end %>         
+    </li>
+  <% end %> 
+</ul>

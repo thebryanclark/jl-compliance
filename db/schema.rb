@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130118043703) do
+ActiveRecord::Schema.define(:version => 20130119052101) do
 
   create_table "equipment", :force => true do |t|
     t.string   "title",            :null => false
@@ -51,7 +51,7 @@ ActiveRecord::Schema.define(:version => 20130118043703) do
     t.string   "driver_name"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
-    t.integer  "subcontractor_id"
+    t.integer  "subcontractor_id", :null => false
   end
 
   create_table "subcontractors", :force => true do |t|
@@ -65,30 +65,23 @@ ActiveRecord::Schema.define(:version => 20130118043703) do
     t.datetime "created_at",                                  :null => false
     t.datetime "updated_at",                                  :null => false
     t.integer  "job_id",                                      :null => false
-    t.boolean  "being_supervised"
+    t.boolean  "being_supervised",         :default => false, :null => false
   end
 
   create_table "supplier_trucks", :force => true do |t|
-    t.string   "plate",       :null => false
-    t.string   "driver_name"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.integer  "supplier_id"
-  end
-
-  create_table "suppliers", :force => true do |t|
-    t.string   "name",       :null => false
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-    t.integer  "job_id"
+    t.string   "plate",         :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "job_id",        :null => false
+    t.string   "supplier_name", :null => false
   end
 
   create_table "tickets", :force => true do |t|
-    t.string   "number",                               :null => false
-    t.boolean  "approved",          :default => false, :null => false
-    t.datetime "created_at",                           :null => false
-    t.datetime "updated_at",                           :null => false
-    t.integer  "supplier_truck_id"
+    t.string   "number",            :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "supplier_truck_id", :null => false
+    t.date     "approved_date"
   end
 
   create_table "users", :force => true do |t|

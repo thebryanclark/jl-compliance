@@ -7,7 +7,7 @@ class JobsController < ApplicationController
   def show
     @job = Job.find(params[:id])
     @title = @job.name
-    @back_target = '/jobs'
+    @back_target = jobs_path
   end
 
 end
