@@ -1,7 +1,7 @@
 class SupplierTruck < ActiveRecord::Base
   attr_accessible :supplier_name, :plate
 
-  has_many :tickets
+  has_many :tickets, inverse_of: :supplier_truck
   accepts_nested_attributes_for :tickets, allow_destroy: true
   attr_accessible :tickets_attributes,    allow_destroy: true
 

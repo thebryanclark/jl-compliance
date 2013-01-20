@@ -7,7 +7,7 @@
           <%= "#{supplier_truck.supplier_name}" %>
         </div>
         <div class="item_info">
-          <%= "#{Ticket.where(:supplier_truck_id => supplier_truck.id).select{|ticket| ticket.approved_date}.count} approved tickets" %>
+          <%= "#{supplier_truck.tickets.count(:approved_date)} approved tickets" %>
         </div>
       <% end %>         
     </li>
