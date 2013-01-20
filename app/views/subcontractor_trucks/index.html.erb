@@ -1,0 +1,15 @@
+<ul data-role="listview" data-inset="true" data-filter="true">
+  <% @subcontractor_trucks.each do |subcontractor_truck| %> 
+    <li>
+      <%= link_to subcontractor_truck do %>
+        <%= subcontractor_truck.driver_name %>
+        <div class="item_info">
+          <%= subcontractor_truck.plate %>
+        </div>
+        <div class="item_info">
+          <%= subcontractor_truck.subcontractor.name %>
+        </div>
+      <% end %>         
+    </li>
+  <% end %> 
+</ul>

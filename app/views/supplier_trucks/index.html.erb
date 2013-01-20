@@ -4,7 +4,7 @@
       <%= link_to supplier_truck do %>
         <%= supplier_truck.plate %>
         <div class="item_info">
-          <%= "#{supplier_truck.supplier_name}" %>
+          <%= supplier_truck.supplier_name %>
         </div>
         <div class="item_info">
           <%= "#{supplier_truck.tickets.count(:approved_date)} approved tickets" %>
