@@ -11,13 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130122074154) do
+ActiveRecord::Schema.define(:version => 20130122142257) do
 
   create_table "equipment", :force => true do |t|
-    t.string   "title",            :null => false
-    t.integer  "subcontractor_id", :null => false
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.string   "title",                   :null => false
+    t.integer  "subcontractor_at_job_id", :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   create_table "jobs", :force => true do |t|
@@ -40,10 +40,10 @@ ActiveRecord::Schema.define(:version => 20130122074154) do
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "scopes", :force => true do |t|
-    t.string   "title",            :null => false
-    t.integer  "subcontractor_id", :null => false
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.string   "title",                   :null => false
+    t.integer  "subcontractor_at_job_id", :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   create_table "subcontractor_at_jobs", :force => true do |t|
