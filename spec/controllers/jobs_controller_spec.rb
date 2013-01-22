@@ -10,7 +10,7 @@ describe JobsController do
 
   describe '#show' do
     it 'is not broken' do
-      job = Job.create!(name: 'test job')
+      job = create(:job)
       get :show, id: job.id
       response.should be_success
     end
