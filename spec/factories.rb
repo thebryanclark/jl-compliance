@@ -18,14 +18,14 @@ FactoryGirl.define do
   factory :job do
     name
   end
-  factory :subcontractor do
+  factory :subcontractor_at_job do
     name
     job
   end
   factory :subcontractor_truck do
     driver_name
     plate
-    subcontractor
+    subcontractor_at_job
   end
   factory :supplier_truck do
     supplier_name

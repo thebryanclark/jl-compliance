@@ -1,8 +1,8 @@
 <ul data-role="listview" data-inset="true" data-filter="true">
   
   <li>
-    <%= link_to "Subcontractors", job_subcontractors_path(@job) %>
-    <span class="ui-li-count"><%= @job.subcontractors.count %></span>
+    <%= link_to "SubcontractorAtJobs", job_subcontractor_at_jobs_path(@job) %>
+    <span class="ui-li-count"><%= @job.subcontractor_at_jobs.count %></span>
   </li>
   
 
@@ -13,7 +13,7 @@
   
 
   <li>
-    <%= link_to "Truckers (subcontractor trucks)", job_subcontractor_trucks_path(@job) %>
+    <%= link_to "Truckers (subcontractor_at_job trucks)", job_subcontractor_trucks_path(@job) %>
     <span class="ui-li-count"><%= @job.subcontractor_trucks.count %></span>
   </li>
   

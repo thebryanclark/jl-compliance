@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SubcontractorsController do
+describe SubcontractorAtJobsController do
   describe '#index' do
     it 'is not broken' do
       job = create(:job)
@@ -11,8 +11,8 @@ describe SubcontractorsController do
 
   describe '#show' do
     it 'is not broken' do
-      subcontractor = create(:subcontractor)
-      get :show, id: subcontractor.id
+      subcontractor_at_job = create(:subcontractor_at_job)
+      get :show, id: subcontractor_at_job.id
       response.should be_success
     end
   end
