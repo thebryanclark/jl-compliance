@@ -11,11 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130119233241) do
+ActiveRecord::Schema.define(:version => 20130122074154) do
 
   create_table "equipment", :force => true do |t|
     t.string   "title",            :null => false
-    t.integer  "subcontractor_at_job_id", :null => false
+    t.integer  "subcontractor_id", :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
   end
@@ -41,21 +41,12 @@ ActiveRecord::Schema.define(:version => 20130119233241) do
 
   create_table "scopes", :force => true do |t|
     t.string   "title",            :null => false
-    t.integer  "subcontractor_at_job_id", :null => false
+    t.integer  "subcontractor_id", :null => false
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
-  end
-
-  create_table "subcontractor_trucks", :force => true do |t|
-    t.string   "plate",            :null => false
-    t.string   "driver_name"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
-    t.integer  "subcontractor_at_job_id", :null => false
   end
 
   create_table "subcontractor_at_jobs", :force => true do |t|
-    t.string   "name",                                        :null => false
     t.string   "foreman_name"
     t.boolean  "foreman_directs_work",     :default => false, :null => false
     t.boolean  "equipment_labeled",        :default => false, :null => false
@@ -66,6 +57,20 @@ ActiveRecord::Schema.define(:version => 20130119233241) do
     t.datetime "updated_at",                                  :null => false
     t.integer  "job_id",                                      :null => false
     t.boolean  "being_supervised",         :default => false, :null => false
+    t.integer  "subcontractor_id",                            :null => false
+  end
+
+  create_table "subcontractor_trucks", :force => true do |t|
+    t.string   "plate",            :null => false
+    t.string   "driver_name"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "subcontractor_id", :null => false
+    t.integer  "job_id",           :null => false
+  end
+
+  create_table "subcontractors", :force => true do |t|
+    t.string "name", :null => false
   end
 
   create_table "supplier_trucks", :force => true do |t|

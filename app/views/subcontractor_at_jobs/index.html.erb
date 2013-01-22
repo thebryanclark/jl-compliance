@@ -2,7 +2,7 @@
   <% @subcontractor_at_jobs.each do |subcontractor_at_job| %> 
     <li>
       <%= link_to subcontractor_at_job do %>
-        <%= subcontractor_at_job.name %>
+        <%= subcontractor_at_job.subcontractor.name %>
         <% if subcontractor_at_job.foreman_name.present? %> 
           <div class="item_info"><%= "Foreman: #{subcontractor_at_job.foreman_name}" %>
           </div>

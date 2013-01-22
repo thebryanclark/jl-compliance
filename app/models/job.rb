@@ -5,7 +5,11 @@ class Job < ActiveRecord::Base
   accepts_nested_attributes_for :subcontractor_at_jobs,  allow_destroy: true
   attr_accessible :subcontractor_at_jobs_attributes,     allow_destroy: true
 
-  has_many  :subcontractor_trucks, :through => :subcontractor_at_jobs
+  has_many  :subcontractors, :through => :subcontractor_at_jobs
+
+  has_many :subcontractor_trucks, inverse_of: :job
+  accepts_nested_attributes_for :subcontractor_trucks,  allow_destroy: true
+  attr_accessible :subcontractor_trucks_attributes,     allow_destroy: true
 
   has_many :supplier_trucks, inverse_of: :job
   accepts_nested_attributes_for :supplier_trucks, allow_destroy: true

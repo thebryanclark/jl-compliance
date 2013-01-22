@@ -1,6 +1,6 @@
 class SubcontractorAtJobsController < ApplicationController
   def index
-    @subcontractor_at_jobs = #### subcontractor_truck SubcontractorAtJob.where(job_id: params[:job_id])
+    @subcontractor_at_jobs = SubcontractorAtJob.where(job_id: params[:job_id])
     @back_target = job_path(params[:job_id])
   end
 
