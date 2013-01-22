@@ -1,179 +1,114 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1085" measuredH="622" mockupW="1083" mockupH="616">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1182" measuredH="615" mockupW="1172" mockupH="582">
   <controls>
-    <control controlID="63" controlTypeID="__group__" x="46" y="522" w="232" h="79" measuredW="232" measuredH="79" zOrder="1" locked="false" isInGroup="-1">
+    <control controlID="63" controlTypeID="__group__" x="10" y="171" w="232" h="79" measuredW="232" measuredH="79" zOrder="0" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="9" w="37" h="39" measuredW="36" measuredH="40" zOrder="0" locked="false" isInGroup="63">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="9" w="37" h="39" measuredW="41" measuredH="39" zOrder="0" locked="false" isInGroup="63">
           <controlProperties>
             <text>1</text>
           </controlProperties>
         </control>
         <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="44" y="0" w="188" h="79" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="63">
           <controlProperties>
-            <text>User%20is%20presented%20with%20all%20supplier%20trucks%20expected%20at%20the%20job%2C%20searchable%20by%20plate%20number%20or%20supplier%20name</text>
+            <text>User%20is%20presented%20with%20a%20simple%20button%20that%20allows%20them%20to%20take%20a%20photo%20of%20a%20delivery%20truck%20or%20delivery%20ticket</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="86" controlTypeID="com.balsamiq.mockups::Title" x="524" y="572" w="-1" h="-1" measuredW="164" measuredH="50" zOrder="2" locked="false" isInGroup="-1">
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::Title" x="524" y="572" w="-1" h="-1" measuredW="170" measuredH="43" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Suppliers</text>
       </controlProperties>
     </control>
-    <control controlID="113" controlTypeID="com.balsamiq.mockups::iPhone" x="406" y="11" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1">
-      <controlProperties>
-        <bgPattern>topBlueBottom</bgPattern>
-        <bgTransparent>true</bgTransparent>
-      </controlProperties>
-    </control>
-    <control controlID="114" controlTypeID="com.balsamiq.mockups::Paragraph" x="447" y="120" w="200" h="19" measuredW="200" measuredH="80" zOrder="4" locked="false" isInGroup="-1">
-      <controlProperties>
-        <align>center</align>
-        <size>14</size>
-        <text>Judlau%20Compliance</text>
-      </controlProperties>
-    </control>
-    <control controlID="115" controlTypeID="com.balsamiq.mockups::PointyButton" x="434" y="116" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="5" locked="false" isInGroup="-1">
-      <controlProperties>
-        <direction>left</direction>
-        <text>Back</text>
-      </controlProperties>
-    </control>
-    <control controlID="116" controlTypeID="com.balsamiq.mockups::Paragraph" x="456" y="408" w="182" h="19" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <align>center</align>
-        <size>13</size>
-        <text>SVPP-L13R</text>
-      </controlProperties>
-    </control>
-    <control controlID="117" controlTypeID="__group__" x="2" y="6" w="282" h="510" measuredW="282" measuredH="510" zOrder="3" locked="false" isInGroup="-1">
+    <control controlID="117" controlTypeID="__group__" x="242" y="33" w="282" h="510" measuredW="282" measuredH="510" zOrder="2" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="34" y="187" w="188" h="-1" measuredW="215" measuredH="222" zOrder="0" locked="false" isInGroup="117">
-          <controlProperties>
-            <text>*9955-SD8*%5CrWhite%20Cap%20Supply%5Cr0%20approved%20tickets%2C%20%3E%0A*BGGT-1195*%5CrWhite%20Cap%20Supply%5Cr2%20approved%20tickets%2C%20%3E%0A*SVPP-L13R*%5CrBechtel%5Cr1%20approved%20ticket%2C%20%3E%0A*Z121-SKLL*%5CrIllini%20Contractor%20Supply%5Cr1%20approved%20ticket%2C%20%3E</text>
-          </controlProperties>
-        </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="1" locked="false" isInGroup="117">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="117">
           <controlProperties>
             <bgPattern>topBlueBottom</bgPattern>
             <bgTransparent>true</bgTransparent>
           </controlProperties>
         </control>
-        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="109" w="200" h="19" measuredW="200" measuredH="80" zOrder="2" locked="false" isInGroup="117">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="109" w="200" h="19" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="117">
           <controlProperties>
             <align>center</align>
             <size>14</size>
             <text>Judlau%20Compliance</text>
           </controlProperties>
         </control>
-        <control controlID="3" controlTypeID="com.balsamiq.mockups::PointyButton" x="28" y="105" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="3" locked="false" isInGroup="117">
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::PointyButton" x="28" y="105" w="-1" h="-1" measuredW="48" measuredH="27" zOrder="2" locked="false" isInGroup="117">
           <controlProperties>
             <direction>left</direction>
             <text>Back</text>
           </controlProperties>
         </control>
-        <control controlID="4" controlTypeID="com.balsamiq.mockups::Paragraph" x="50" y="397" w="182" h="19" measuredW="200" measuredH="80" zOrder="4" locked="false" isInGroup="117">
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Paragraph" x="50" y="397" w="182" h="19" measuredW="200" measuredH="80" zOrder="3" locked="false" isInGroup="117">
           <controlProperties>
             <align>center</align>
             <size>13</size>
             <text>Suppliers</text>
           </controlProperties>
         </control>
-        <control controlID="5" controlTypeID="com.balsamiq.mockups::TextInput" x="34" y="151" w="215" h="-1" measuredW="151" measuredH="27" zOrder="5" locked="false" isInGroup="117">
+        <control controlID="8" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="295" w="-1" h="-1" measuredW="200" measuredH="80" zOrder="4" locked="false" isInGroup="117">
           <controlProperties>
-            <text>_Enter%20plate%20or%20supplier..._</text>
+            <text>Use%20this%20to%20take%20a%20photo%20of%20a%20truck%20or%20delivery%20ticket%20and%20send%20it%20to%20the%20back%20office</text>
           </controlProperties>
         </control>
-        <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="209" y="151" w="-1" h="-1" measuredW="40" measuredH="27" zOrder="6" locked="false" isInGroup="117">
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Button" x="72" y="195" w="-1" h="-1" measuredW="138" measuredH="48" zOrder="5" locked="false" isInGroup="117">
           <controlProperties>
-            <icon>SearchIcon%7Cxsmall</icon>
-            <text/>
-          </controlProperties>
-        </control>
-        <control controlID="7" controlTypeID="com.balsamiq.mockups::VSlider" x="232" y="193" w="-1" h="189" measuredW="11" measuredH="33" zOrder="7" locked="false" isInGroup="117">
-          <controlProperties>
-            <value>19</value>
+            <icon>CameraIcon%7Clarge</icon>
+            <text>Take%20Photo</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="120" controlTypeID="com.balsamiq.mockups::Label" x="443" y="181" w="-1" h="-1" measuredW="108" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>White%20Cap%20Supply</text>
-      </controlProperties>
-    </control>
-    <control controlID="152" controlTypeID="__group__" x="382" y="522" w="331" h="79" measuredW="331" measuredH="79" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="152" controlTypeID="__group__" x="916" y="171" w="266" h="129" measuredW="266" measuredH="129" zOrder="3" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="0" w="-1" h="-1" measuredW="39" measuredH="40" zOrder="0" locked="false" isInGroup="152">
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="15" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="0" locked="false" isInGroup="152">
           <controlProperties>
             <text>2</text>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="54" y="0" w="277" h="79" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="152">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="50" y="0" w="216" h="129" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="152">
           <controlProperties>
-            <text>Tapping%20on%20a%20supplier%20truck%20shows%20the%20details%20for%20the%20truck%2C%20including%20the%20supplier%20they%20deliver%20for%20and%20all%20delivery%20tickets%20associated%20with%20the%20truck</text>
+            <text>Next%20steps%20purposefully%20omitted%20during%20the%20first%20phase%20of%20app%20development.%20We%27ll%20revisit%20this%20to%20actually%20allow%20the%20user%20to%20take%20a%20photo%2C%20fill%20in%20some%20notes%2C%20and%20submit%20to%20the%20office</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="153" controlTypeID="__group__" x="820" y="530" w="265" h="79" measuredW="265" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="169" controlTypeID="com.balsamiq.mockups::StickyNote" x="427" y="362" w="186" h="170" measuredW="109" measuredH="123" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Updated%201/21/13%3A%0A%20%0AThe%20Suppliers%20section%20of%20the%20app%20should%20be%20used%20just%20for%20sending%20photos%20from%20the%20field%20to%20the%20office%2C%20not%20browsing%20supplier%20data</text>
+      </controlProperties>
+    </control>
+    <control controlID="170" controlTypeID="__group__" x="628" y="33" w="282" h="510" measuredW="282" measuredH="510" zOrder="5" locked="false" isInGroup="-1">
       <groupChildrenDescriptors>
-        <control controlID="0" controlTypeID="com.balsamiq.mockups::CallOut" x="0" y="0" w="-1" h="-1" measuredW="39" measuredH="39" zOrder="0" locked="false" isInGroup="153">
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::iPhone" x="0" y="0" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="170">
           <controlProperties>
-            <text>3</text>
+            <bgPattern>topBlueBottom</bgPattern>
+            <bgTransparent>true</bgTransparent>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Paragraph" x="54" y="0" w="211" h="79" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="153">
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::Paragraph" x="41" y="109" w="200" h="19" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="170">
           <controlProperties>
-            <text>Tapping%20a%20delivery%20ticket%20shows%20the%20photo%20of%20the%20approved%20slip</text>
+            <align>center</align>
+            <size>14</size>
+            <text>Judlau%20Compliance</text>
+          </controlProperties>
+        </control>
+        <control controlID="3" controlTypeID="com.balsamiq.mockups::PointyButton" x="28" y="105" w="-1" h="-1" measuredW="48" measuredH="27" zOrder="2" locked="false" isInGroup="170">
+          <controlProperties>
+            <direction>left</direction>
+            <text>Back</text>
+          </controlProperties>
+        </control>
+        <control controlID="4" controlTypeID="com.balsamiq.mockups::Paragraph" x="50" y="397" w="182" h="19" measuredW="200" measuredH="80" zOrder="3" locked="false" isInGroup="170">
+          <controlProperties>
+            <align>center</align>
+            <size>13</size>
+            <text>Suppliers</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="154" controlTypeID="com.balsamiq.mockups::SubTitle" x="443" y="154" w="-1" h="-1" measuredW="129" measuredH="33" zOrder="10" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>SVPP-LI3R</text>
-      </controlProperties>
-    </control>
-    <control controlID="155" controlTypeID="com.balsamiq.mockups::iPhoneMenu" x="447" y="221" w="200" h="-1" measuredW="215" measuredH="110" zOrder="11" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>__%20*Ticket%20%23ABC-432*%5CrNot%20yet%20approved%0A__%20*Ticket%20%23PQR-987*%5CrApproved%2001/09/2013</text>
-      </controlProperties>
-    </control>
-    <control controlID="157" controlTypeID="com.balsamiq.mockups::Icon" x="467" y="287" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="12" locked="false" isInGroup="-1">
-      <controlProperties>
-        <borderStyle>square</borderStyle>
-        <icon>FileIcon%7Cmedium</icon>
-      </controlProperties>
-    </control>
-    <control controlID="158" controlTypeID="com.balsamiq.mockups::Image" x="467" y="237" w="32" h="32" measuredW="77" measuredH="79" zOrder="13" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text/>
-      </controlProperties>
-    </control>
-    <control controlID="159" controlTypeID="com.balsamiq.mockups::iPhone" x="797" y="6" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="14" locked="false" isInGroup="-1">
-      <controlProperties>
-        <bgPattern>topBlueBottom</bgPattern>
-        <bgTransparent>true</bgTransparent>
-      </controlProperties>
-    </control>
-    <control controlID="160" controlTypeID="com.balsamiq.mockups::Paragraph" x="839" y="115" w="200" h="19" measuredW="200" measuredH="80" zOrder="15" locked="false" isInGroup="-1">
-      <controlProperties>
-        <align>center</align>
-        <size>14</size>
-        <text>Judlau%20Compliance</text>
-      </controlProperties>
-    </control>
-    <control controlID="161" controlTypeID="com.balsamiq.mockups::PointyButton" x="826" y="111" w="-1" h="-1" measuredW="50" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
-      <controlProperties>
-        <direction>left</direction>
-        <text>Back</text>
-      </controlProperties>
-    </control>
-    <control controlID="168" controlTypeID="com.balsamiq.mockups::Image" x="825" y="149" w="228" h="281" measuredW="600" measuredH="450" zOrder="17" locked="false" isInGroup="-1">
-      <controlProperties>
-        <src>http%3A//www.asarebar.com/Portals/0/Solutions/Rebar/Images//DTScrn1_DT.png</src>
-        <text/>
-      </controlProperties>
-    </control>
+    <control controlID="171" controlTypeID="com.balsamiq.mockups::RedX" x="649" y="220" w="240" h="104" measuredW="240" measuredH="104" zOrder="6" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
