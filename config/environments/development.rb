@@ -36,4 +36,7 @@ JlCompliance::Application.configure do
   config.assets.debug = true
 
   config.action_mailer.default_url_options = { :host => 'localhost:3002' }
+
+  # Tells Paperclip where Imagemagick is
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

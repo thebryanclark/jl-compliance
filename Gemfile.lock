@@ -192,7 +192,7 @@ DEPENDENCIES
   devise
   factory_girl
   jquery-rails
-  paperclip
+  paperclip (~> 3.0)
   pry
   rails (= 3.2.8)
   rails_admin!

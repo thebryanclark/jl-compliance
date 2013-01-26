@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'devise'
 gem 'rails', '3.2.8'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
-gem 'paperclip'
+gem 'paperclip', '~> 3.0'
 
 group :production do
   gem 'aws-sdk'

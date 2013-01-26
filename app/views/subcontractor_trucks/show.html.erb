@@ -2,6 +2,13 @@
   <li><%= @subcontractor_truck.driver_name %></li>
   <li><%= "Plate number: #{@subcontractor_truck.plate}" %></li>
   <li><%= "Firm: #{@subcontractor_truck.subcontractor.name}" %></li>
-  <li>photo goes here</li>
-
 </ul>
+
+<div style="padding-top: 25px;">
+<%= 
+  link_to(
+    image_tag( @subcontractor_truck.headshot.url(:medium) ), 
+    "#{@subcontractor_truck.headshot.url(:large)}" 
+  ) 
+%>
+</div>

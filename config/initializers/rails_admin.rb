@@ -51,4 +51,15 @@ RailsAdmin.config do |config|
   # Anyway, here is how RailsAdmin saw your application's models when you ran the initializer:
 
 
+  RailsAdmin.config do |config|
+    config.model 'SubcontractorTruck' do
+      edit do
+        field :headshot, :paperclip do
+          # configuration here
+        end
+      end
+    end
+  end
+
+
 end
