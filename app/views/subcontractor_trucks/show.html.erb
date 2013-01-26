@@ -4,11 +4,13 @@
   <li><%= "Firm: #{@subcontractor_truck.subcontractor.name}" %></li>
 </ul>
 
-<div style="padding-top: 25px;">
-<%= 
-  link_to(
-    image_tag( @subcontractor_truck.headshot.url(:medium) ), 
-    "#{@subcontractor_truck.headshot.url(:large)}" 
-  ) 
-%>
-</div>
+<% @subcontractor_truck.photos.each do |photo| %>
+  <div style="padding-top: 25px;">
+  <%= 
+    link_to(
+      image_tag( photo.image.url(:medium) ), 
+      "#{photo.image.url(:large)}" 
+    ) 
+  %>
+  </div>
+<% end %>

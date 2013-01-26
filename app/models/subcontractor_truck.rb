@@ -1,13 +1,9 @@
 class SubcontractorTruck < ActiveRecord::Base
   attr_accessible :driver_name, :plate
 
-  attr_accessible   :headshot
-  has_attached_file :headshot, 
-                    :styles => { :medium => "300x300>", :large => "600x600>" }  
-  
-  attr_accessor   :delete_headshot
-  attr_accessible :delete_headshot
-  before_validation { self.headshot.clear if self.delete_headshot == '1' }
+  has_many :photos, as: :photoable, inverse_of: :photoable 
+  accepts_nested_attributes_for :photos,  allow_destroy: true
+  attr_accessible :photos_attributes,     allow_destroy: true
 
   belongs_to :subcontractor, inverse_of: :subcontractor_trucks
   attr_accessible :subcontractor_id

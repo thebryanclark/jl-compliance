@@ -69,8 +69,8 @@ JlCompliance::Application.configure do
     :s3_protocol => 'http',
     :s3_credentials => {
       :bucket => ENV['AWS_BUCKET'],
-      :access_key_id => ENV['AKIAJIRZ4W6E3WQFXD3Q'],
-      :secret_access_key => ENV['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']
+      :access_key_id => ENV['ACCESS_KEY'],
+      :secret_access_key => ENV['SECRET_KEY']
     }  
   }
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130123231128) do
+ActiveRecord::Schema.define(:version => 20130126041701) do
 
   create_table "equipment", :force => true do |t|
     t.string   "title",                   :null => false
@@ -24,6 +24,17 @@ ActiveRecord::Schema.define(:version => 20130123231128) do
     t.string   "name",       :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "photos", :force => true do |t|
+    t.integer  "photoable_id",       :null => false
+    t.string   "photoable_type",     :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
@@ -61,16 +72,12 @@ ActiveRecord::Schema.define(:version => 20130123231128) do
   end
 
   create_table "subcontractor_trucks", :force => true do |t|
-    t.string   "plate",                 :null => false
+    t.string   "plate",            :null => false
     t.string   "driver_name"
-    t.datetime "created_at",            :null => false
-    t.datetime "updated_at",            :null => false
-    t.integer  "subcontractor_id",      :null => false
-    t.integer  "job_id",                :null => false
-    t.string   "headshot_file_name"
-    t.string   "headshot_content_type"
-    t.integer  "headshot_file_size"
-    t.datetime "headshot_updated_at"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "subcontractor_id", :null => false
+    t.integer  "job_id",           :null => false
   end
 
   create_table "subcontractors", :force => true do |t|

@@ -52,9 +52,9 @@ RailsAdmin.config do |config|
 
 
   RailsAdmin.config do |config|
-    config.model 'SubcontractorTruck' do
+    config.model 'Photo' do
       edit do
-        field :headshot, :paperclip do
+        field :image, :paperclip do
           # configuration here
         end
       end

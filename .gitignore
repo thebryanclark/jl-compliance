@@ -14,4 +14,8 @@
 /log/*.log
 /tmp
 
+# OSX bullshit
 .DS_Store
+
+# Where paperclip stores the photos for dev env
+/public/system
