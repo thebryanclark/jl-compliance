@@ -10,7 +10,11 @@
  *
  *= require_self
  *= require_tree .
+ *= require font-awesome.min.css
  */
 .item_info {
   font-weight: normal;
+}
+.font-awesome {
+  font-family: FontAwesome;
 }
