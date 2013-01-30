@@ -18,3 +18,8 @@
 .font-awesome {
   font-family: FontAwesome;
 }
+span.custom-button-icon {
+  vertical-align: middle;
+  padding-right: 10px;
+  color: #000000;
+}

@@ -1,15 +1,6 @@
-<ul data-role="listview" data-inset="true" data-filter="true">
-  <% @supplier_trucks.each do |supplier_truck| %> 
-    <li>
-      <%= link_to supplier_truck do %>
-        <%= supplier_truck.plate %>
-        <div class="item_info">
-          <%= supplier_truck.supplier_name %>
-        </div>
-        <div class="item_info">
-          <%= "#{supplier_truck.tickets.count(:approved_date)} approved tickets" %>
-        </div>
-      <% end %>         
-    </li>
-  <% end %> 
-</ul>
+<a href="#" data-role="button" data-theme="b" data-inline="true">
+  <%= icon('camera-retro', 'icon-3x', 'custom-button-icon') %> Take Photo
+</a>
+<p>
+  Use this to take a photo of a truck or delivery ticket, and send it to the back office
+</p>

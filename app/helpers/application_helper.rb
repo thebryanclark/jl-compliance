@@ -1,6 +1,6 @@
 module ApplicationHelper
-  def icon(icon_name)
-    content_tag :span, ' ', class: "font-awesome icon-#{icon_name}"
+  def icon(icon_name, *css_classes)
+    content_tag :span, ' ', class: "font-awesome icon-#{icon_name} #{css_classes.join(' ')}"
   end
 
   def icon_if(boolean_value, true_icon, false_icon)
