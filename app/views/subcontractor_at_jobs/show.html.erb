@@ -3,7 +3,7 @@
   <li data-role="list-divider">Information</li>
   <li><div><ul data-role="listview">
     <li><%=           "Foreman: #{@subcontractor_at_job.foreman_name}" %></li>
-    <li><%= "Employees present: #{@subcontractor_at_job.employee_count}" %></li>
+    <li><%= "# of Employees present: #{@subcontractor_at_job.employee_count}" %></li>
 
     <li><%= if @subcontractor_at_job.foreman_directs_work?     then "Y" else "?" end %>
         Foreman directs work
@@ -25,7 +25,7 @@
   </li>
 
   <li data-role="list-divider">Equipment</li>
-  <li><div><ul data-role="listview">
+  <li><div><ul data-role="listview" data-inset="true">
     <% if @subcontractor_at_job.equipment.blank? %>
       <li>No equipment on record</li>
     <% end %> 
@@ -35,7 +35,7 @@
   </ul></div></li>
   
   <li data-role="list-divider">Scopes</li>
-  <li><div><ul data-role="listview">
+  <li><div><ul data-role="listview" data-inset="true">
     <% if @subcontractor_at_job.scopes.blank? %>
       <li>No scopes on record</li>
     <% end %> 
