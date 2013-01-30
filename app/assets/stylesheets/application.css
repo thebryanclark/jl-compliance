@@ -23,7 +23,10 @@ span.custom-button-icon {
   padding-right: 10px;
   color: #000000;
 }
-
+.image-gallery-grid {
+  margin-top:25px;
+  text-align: center;
+}
 /* Footer fixed to bottom of page */
 [data-role=page]{height: 100% !important; position:relative !important;}
 [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
