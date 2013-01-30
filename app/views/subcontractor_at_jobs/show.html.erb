@@ -4,17 +4,14 @@
   <li><div><ul data-role="listview">
     <li><%=           "Foreman: #{@subcontractor_at_job.foreman_name}" %></li>
     <li><%= "# of Employees present: #{@subcontractor_at_job.employee_count}" %></li>
-
-    <li><%= if @subcontractor_at_job.foreman_directs_work?     then "Y" else "?" end %>
-        Foreman directs work
-    </li>
-    <li><%= if @subcontractor_at_job.being_supervised?         then "Y" else "?" end %>
+    <li><%= check_icon(@subcontractor_at_job.foreman_directs_work) %> Foreman directs work </li>
+    <li><%= check_icon(@subcontractor_at_job.being_supervised?) %>
         Is being supervised
     </li>
-    <li><%= if @subcontractor_at_job.equipment_labeled?        then "Y" else "?" end %>
+    <li><%= check_icon(@subcontractor_at_job.equipment_labeled?) %>
         Name or logo appears on equipment
     </li>
-    <li><%= if @subcontractor_at_job.employees_work_elsewhere? then "Y" else "?" end %>
+    <li><%= check_icon(@subcontractor_at_job.employees_work_elsewhere?) %>
         Employees work with other firms
     </li>
   </ul></div></li>
