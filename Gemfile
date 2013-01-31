@@ -7,6 +7,7 @@ gem 'paperclip', '~> 3.0'
 
 group :production do
   gem 'aws-sdk'
+  gem 'pg'
 end
 
 # Bundle edge Rails instead:
