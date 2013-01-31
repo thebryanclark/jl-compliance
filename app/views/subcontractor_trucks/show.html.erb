@@ -4,6 +4,9 @@
 </ul>
 
 <div class="ui-grid-a image-gallery-grid">
-  <div class="ui-block-a"><%= image_tag( @subcontractor_truck.photos.first.image.url(:medium), style: 'width: 80%;border: 2px solid #CCCCCC;padding:4px;' )%> </div>
-  <div class="ui-block-b"><%= image_tag( @subcontractor_truck.photos.first.image.url(:medium), style: 'width: 80%;border: 2px solid #CCCCCC;padding:4px;' )%> </div>
-</div><!-- /grid-a -->
+  <% @subcontractor_truck.photos.each do |photo| %>
+  <div class="ui-block-<%= cycle('a','b') %>">
+    <%= image_tag( photo.image.url(:medium), style: 'width: 80%;border: 2px solid #CCCCCC;padding:4px;' )%>
+  </div>
+  <% end %>
+</div>
