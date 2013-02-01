@@ -8,6 +8,6 @@ class SubcontractorTrucksController < ApplicationController
   def show
     @subcontractor_truck = SubcontractorTruck.where(id: params[:id]).first
     @title = @subcontractor_truck.driver_name
-    @back_target = job_subcontractor_trucks_path(@subcontractor_truck) 
+    @back_target = job_subcontractor_trucks_path(@subcontractor_truck.job) 
   end
 end
