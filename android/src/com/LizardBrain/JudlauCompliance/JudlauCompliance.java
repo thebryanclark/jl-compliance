@@ -17,13 +17,13 @@
        under the License.
  */
 
-package com.LizardBrain.HelloWorld;
+package com.LizardBrain.JudlauCompliance;
 
 import android.app.Activity;
 import android.os.Bundle;
 import org.apache.cordova.*;
 
-public class HelloWorld extends DroidGap
+public class JudlauCompliance extends DroidGap
 {
     @Override
     public void onCreate(Bundle savedInstanceState)
