@@ -19,3 +19,10 @@
 
 # Where paperclip stores the photos for dev env
 /public/system
+
+# Android app build artifacts
+/android/bin/
+/android/gen/*
+
+# Android app local settings
+/android/local.properties
