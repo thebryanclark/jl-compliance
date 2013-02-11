@@ -7213,14 +7213,12 @@ $( document ).bind( "pagecreate create", function( e ) {
     locked: false,
     disable: function( lock ) {
       if ( !disabledInitially && !$.mobile.zoom.locked ) {
-        meta.attr( "content", disabledZoom );
         $.mobile.zoom.enabled = false;
         $.mobile.zoom.locked = lock || false;
       }
     },
     enable: function( unlock ) {
       if ( !disabledInitially && ( !$.mobile.zoom.locked || unlock === true ) ) {
-        meta.attr( "content", enabledZoom );
         $.mobile.zoom.enabled = true;
         $.mobile.zoom.locked = false;
       }
