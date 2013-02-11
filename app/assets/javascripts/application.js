@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require_tree .
 //= require cordova-2.3.0
+//= require jquery.mobile-1.2.0
