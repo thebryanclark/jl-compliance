@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'devise'
+gem 'newrelic_rpm'
 gem 'rails', '3.2.11'
 gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'paperclip', '~> 3.0'
+gem 'awesome_print', :require => 'ap'
 
 group :production do
   gem 'aws-sdk'
