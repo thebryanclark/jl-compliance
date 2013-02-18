@@ -6,7 +6,10 @@
 <div class="ui-grid-a image-gallery-grid">
   <% @subcontractor_truck.photos.each do |photo| %>
   <div class="ui-block-<%= cycle('a','b') %>">
-    <%= image_tag( photo.image.url(:medium), style: 'width: 80%;border: 2px solid #CCCCCC;padding:4px;' )%>
+    <%= link_to(photo) do %>
+      <%= image_tag( photo.image.url(:medium), class: 'image-gallery-member' )%>
+      <p class="ellipsis"><%= photo.caption %></p>
+    <% end %> 
   </div>
   <% end %>
 </div>
