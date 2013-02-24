@@ -50,17 +50,19 @@ RailsAdmin.config do |config|
   # Now you probably need to tour the wiki a bit: https://github.com/sferik/rails_admin/wiki
   # Anyway, here is how RailsAdmin saw your application's models when you ran the initializer:
 
+  config.navigation_static_links = {
+    'For Android' => 'http://jl-compliance-staging.herokuapp.com/downloads/judlau-compliance-1.0.apk'
+  }
 
-  RailsAdmin.config do |config|
-    config.model 'Photo' do
-      include_all_fields
-      nested do
-        field :photoable do
-          visible false
-        end
+  config.navigation_static_label = "Download Mobile App"
+
+  config.model 'Photo' do
+    include_all_fields
+    nested do
+      field :photoable do
+        visible false
       end
     end
   end
-
 
 end
