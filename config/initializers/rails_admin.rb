@@ -50,13 +50,23 @@ RailsAdmin.config do |config|
   # Now you probably need to tour the wiki a bit: https://github.com/sferik/rails_admin/wiki
   # Anyway, here is how RailsAdmin saw your application's models when you ran the initializer:
 
+  config.compact_show_view = false
+  
+  config.total_columns_width = 1000
+
   config.navigation_static_links = {
     'For Android' => 'http://jl-compliance-staging.herokuapp.com/downloads/judlau-compliance-1.0.apk'
   }
 
   config.navigation_static_label = "Download Mobile App"
 
+  config.model 'User' do
+    navigation_label 'Administration App'
+    label 'User Accounts'
+  end
+
   config.model 'Photo' do
+    visible false
     include_all_fields
     nested do
       field :photoable do
@@ -64,5 +74,48 @@ RailsAdmin.config do |config|
       end
     end
   end
+
+  config.model 'SubcontractorAtJob' do
+    visible false
+  end
+  config.model 'Equipment' do
+    visible false
+  end
+  config.model 'Scope' do
+    visible false
+  end
+
+  config.model 'Job' do
+    
+    list do
+      field :name
+      field :subcontractors
+      field :subcontractor_trucks do
+        label "Truckers"  
+        searchable :driver_name
+      end
+      field :supplier_trucks
+    end
+    show do
+      field :id do
+        pretty_value do
+
+        end
+      end
+      include_all_fields
+    end
+  end
+  config.model 'Subcontractor' do
+    
+  end
+
+  config.model 'SubcontractorTruck' do
+  end
+  config.model 'SupplierTruck' do
+  end
+  config.model 'Ticket' do
+    parent 'SupplierTruck'
+  end
+
 
 end

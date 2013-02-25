@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  activerecord:
+    models:
+      subcontractor_truck:
+        one: Trucker
+        other: Truckers
