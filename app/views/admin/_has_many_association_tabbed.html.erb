@@ -1,5 +1,14 @@
-<% objects.each do |object| %>
-  <%= object.send(model_config.object_label_method) %>
+<ul class="nav nav-tabs" style="margin-top: 5px; display: block;">
+  <% objects.each_with_index do |object, i| %>
+  <li class="<%= 'active' if i == 0%>">
+    <%= link_to object.send(model_config.object_label_method), "##{object.class.model_name}-#{object.id}", data: {toggle: 'tab'} %>
+  </li>
+  <% end %>
+</ul>
+<div class="tab-content">
+
+<% objects.each_with_index do |object, i| %>
+<div id="<%= "#{object.class.model_name}-#{object.id}" %>" class="fields tab-pane <%='active' if i == 0%>"> 
   <% model_config.show.with(object: object, view: self).visible_groups.each do |fieldset| %>
     <%= fieldset.label %>
     <dl>
@@ -8,4 +17,5 @@
       <dd class="well"><%= field.pretty_value %></dd>
     <% end %>
   <% end %>
+</div>
 <% end %>
