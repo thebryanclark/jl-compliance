@@ -87,17 +87,20 @@ RailsAdmin.config do |config|
 
   config.model 'Job' do
     
-    list do
-      field :name
-      field :subcontractors
-      field :subcontractor_trucks do
-        label "Truckers"  
-        searchable :driver_name
-      end
-      field :supplier_trucks
+    field :name
+    field :subcontractors
+    field :subcontractor_trucks do
+      label "Truckers"  
+      searchable :driver_name
     end
+    field :supplier_trucks
+
     show do
+      field :subcontractors do
+        visible false
+      end
       field :subcontractor_at_jobs do
+        label 'Subcontractors'
         pretty_value do
           model_config = RailsAdmin::AbstractModel.new(name.to_s.camelize.singularize).config
           bindings[:view].render(
@@ -107,6 +110,15 @@ RailsAdmin.config do |config|
         end
       end
       include_all_fields
+    end
+
+    edit do
+      field :subcontractors do
+        visible false
+      end
+      field :subcontractor_at_jobs do
+        label 'Subcontractors'
+      end
     end
   end
   config.model 'Subcontractor' do
