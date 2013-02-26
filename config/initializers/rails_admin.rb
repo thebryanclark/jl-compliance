@@ -97,9 +97,13 @@ RailsAdmin.config do |config|
       field :supplier_trucks
     end
     show do
-      field :id do
+      field :subcontractor_at_jobs do
         pretty_value do
-
+          model_config = RailsAdmin::AbstractModel.new(name.to_s.camelize.singularize).config
+          bindings[:view].render(
+            partial: 'admin/has_many_association_tabbed',
+            locals: { objects: self.value, model_config: model_config }
+          )
         end
       end
       include_all_fields

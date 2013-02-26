@@ -1,0 +1,11 @@
+<% objects.each do |object| %>
+  <%= object.send(model_config.object_label_method) %>
+  <% model_config.show.with(object: object, view: self).visible_groups.each do |fieldset| %>
+    <%= fieldset.label %>
+    <dl>
+    <% fieldset.with(object: object, view: self).visible_fields.each do |field| %>
+      <dt><%= field.label %></dt>
+      <dd class="well"><%= field.pretty_value %></dd>
+    <% end %>
+  <% end %>
+<% end %>
