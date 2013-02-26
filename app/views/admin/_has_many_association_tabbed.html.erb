@@ -1,19 +1,18 @@
-<ul class="nav nav-tabs" style="margin-top: 5px; display: block;">
+<ul class="nav nav-tabs" style="margin-top: 5px; display: block; margin-bottom: 0px;">
   <% objects.each_with_index do |object, i| %>
   <li class="<%= 'active' if i == 0%>">
     <%= link_to object.send(model_config.object_label_method), "##{object.class.model_name}-#{object.id}", data: {toggle: 'tab'} %>
   </li>
   <% end %>
 </ul>
-<div class="tab-content">
-
+<div class="tab-content" style="padding-left: 30px; padding-right: 30px; padding-top: 15px; border-style: solid; border-width: 1px; border-color: #DDDDDD; border-top: none; background-color: white;">
 <% objects.each_with_index do |object, i| %>
 <div id="<%= "#{object.class.model_name}-#{object.id}" %>" class="fields tab-pane <%='active' if i == 0%>"> 
   <% model_config.show.with(object: object, view: self).visible_groups.each do |fieldset| %>
-    <%= fieldset.label %>
+    <h4><%= fieldset.label %></h4>
     <dl>
     <% fieldset.with(object: object, view: self).visible_fields.each do |field| %>
-      <dt><%= field.label %></dt>
+      <dt><span class="label label-success <%= "#{field.type_css_class} #{field.css_class}" %>"><%= field.label %></span></dt>
       <dd class="well"><%= field.pretty_value %></dd>
     <% end %>
   <% end %>
