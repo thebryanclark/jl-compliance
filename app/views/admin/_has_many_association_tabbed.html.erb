@@ -12,8 +12,10 @@
     <h4><%= fieldset.label %></h4>
     <dl>
     <% fieldset.with(object: object, view: self).visible_fields.each do |field| %>
-      <dt><span class="label label-success <%= "#{field.type_css_class} #{field.css_class}" %>"><%= field.label %></span></dt>
-      <dd class="well"><%= field.pretty_value %></dd>
+      <% unless field.value == @object %>
+        <dt><span class="label label-success <%= "#{field.type_css_class} #{field.css_class}" %>"><%= field.label %></span></dt>
+        <dd class="well"><%= field.pretty_value %></dd>
+      <% end %>
     <% end %>
   <% end %>
 </div>
