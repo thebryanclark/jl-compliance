@@ -27,6 +27,12 @@ span.custom-button-icon {
   margin-top: 25px;
   text-align: center;
 }
+.image-gallery-grid a {
+    text-decoration: none;
+}
+.image-gallery-grid a:hover {
+    text-decoration: underline;
+}
 .image-gallery-member {
   width:    80%;
   border:   2px solid #CCCCCC;

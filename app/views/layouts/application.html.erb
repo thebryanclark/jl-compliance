@@ -28,9 +28,11 @@
     <%= yield %>
   </div>
 
-  <div data-role="footer" data-position="fixed">
-    <h1><%= @title %></h1>
-  </div>
+  <% unless @suppress_footer -%>
+    <div data-role="footer" data-position="fixed">
+      <h1><%= @title %></h1>
+    </div>
+  <% end %>
 
 </div><!-- /page -->
 

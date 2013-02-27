@@ -107,7 +107,6 @@ RailsAdmin.config do |config|
       include_all_fields
     end
 
-
     export do
       include_all_fields
     end
