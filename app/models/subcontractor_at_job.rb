@@ -23,4 +23,14 @@ class SubcontractorAtJob < ActiveRecord::Base
   attr_accessible :subcontractor_id
   validates :subcontractor, presence: true
 
+  def rails_admin_object_label
+    case Thread.current[:abstract_model].try(:model_name)
+    when Job.model_name
+      subcontractor.name
+    when Subcontractor.model_name
+      job.name
+    else
+      "#{self.class.model_name.titleize} ##{id}"
+    end
+  end
 end
