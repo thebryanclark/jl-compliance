@@ -1,5 +1,5 @@
 class AddPhotoCaptions < ActiveRecord::Migration
   def change
-    add_column :photos, :caption, :String
+    add_column :photos, :caption, :string
   end
 end
