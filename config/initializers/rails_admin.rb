@@ -20,9 +20,6 @@ RailsAdmin.config do |config|
   # Or with a PaperTrail: (you need to install it first)
   # config.audit_with :paper_trail, 'User'
 
-  # Display empty fields in show views:
-  # config.compact_show_view = false
-
   # Number of default rows per-page:
   # config.default_items_per_page = 20
 
@@ -51,8 +48,6 @@ RailsAdmin.config do |config|
   # Anyway, here is how RailsAdmin saw your application's models when you ran the initializer:
 
   config.compact_show_view = false
-  
-  config.total_columns_width = 1000
 
   config.navigation_static_links = {
     'For Android' => 'http://jl-compliance-staging.herokuapp.com/downloads/judlau-compliance-1.0.apk'
@@ -61,7 +56,7 @@ RailsAdmin.config do |config|
   config.navigation_static_label = "Download Mobile App"
 
   config.model 'User' do
-    navigation_label 'Administration App'
+    navigation_label 'Administration'
     label 'User Accounts'
   end
 
@@ -109,6 +104,11 @@ RailsAdmin.config do |config|
           )
         end
       end
+      include_all_fields
+    end
+
+
+    export do
       include_all_fields
     end
 
