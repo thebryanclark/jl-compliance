@@ -31,6 +31,8 @@
     <!-- jl-compliance specific permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- high quality photos must be saved before upload -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
 
     <!-- Required to access the Rails app -->
     <uses-permission android:name="android.permission.INTERNET" />

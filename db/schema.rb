@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130203223615) do
+ActiveRecord::Schema.define(:version => 20130309170757) do
 
   create_table "equipment", :force => true do |t|
     t.string   "title",                   :null => false
@@ -27,15 +27,15 @@ ActiveRecord::Schema.define(:version => 20130203223615) do
   end
 
   create_table "photos", :force => true do |t|
-    t.integer  "photoable_id",                      :null => false
-    t.string   "photoable_type",                    :null => false
+    t.integer  "photoable_id"
+    t.integer  "photoable_type",     :limit => 255
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.string   "caption",            :limit => nil
+    t.string   "caption"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
