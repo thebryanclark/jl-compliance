@@ -3,13 +3,11 @@
 <head> 
 <title>Judlau Compliance</title> 
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-  <% if !rails_admin_view? %> 
     <%= javascript_include_tag "application" %>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
     <link rel="stylesheet" 
       href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
-  <% end %> 
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
 </head> 

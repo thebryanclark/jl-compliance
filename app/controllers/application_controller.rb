@@ -7,17 +7,7 @@ class ApplicationController < ActionController::Base
 
   layout 'application'
 
-  helper_method :rails_admin_view?
-
 private
-
-  EXCLUDE_MOBILE_PATHS = ['admin', 'users']
-
-  def rails_admin_view?
-    EXCLUDE_MOBILE_PATHS.any? do |path|
-      request.path.starts_with? "/#{path}"
-    end
-  end
 
   def infer_page_title
     if params[:action] == 'index'

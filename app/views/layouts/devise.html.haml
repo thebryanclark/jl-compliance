@@ -1,0 +1,30 @@
+!!! 5
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    %meta{:content => "NONE,NOARCHIVE", :name => "robots"}
+    = csrf_meta_tag
+    = stylesheet_link_tag "rails_admin/rails_admin.css", :media => :all
+    = javascript_include_tag "rails_admin/rails_admin.js"
+  %body.rails_admin
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          %a.brand.pjax{:href => '/admin'}
+            Judlau Compliance
+            %small Admin
+          .nav-collapse
+            %ul.nav.pull-right
+              %li
+                %a{href: '/admin'} Dashboard
+              %li
+                %a{href: '/'} Home
+    .container-fluid
+      .row-fluid
+        .span4
+          .row-fluid
+        .span5
+          .well
+            = yield
+        .span4
+          .row-fluid
