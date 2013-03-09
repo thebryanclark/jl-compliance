@@ -7,7 +7,7 @@
     <li><%= check_icon(@subcontractor_at_job.foreman_directs_work) %> Foreman directs work </li>
     <li><%= check_icon(@subcontractor_at_job.being_supervised?) %>
         Is being supervised (own foreman / super / PM / other)
-        <br/>
+        <br/><br/>
         <i style="visibility: hidden;" class="font-awesome icon-check-empty" ></i>
         by:
         <%= @subcontractor_at_job.supervised_by.present? ?
@@ -15,6 +15,10 @@
     </li>
     <li><%= check_icon(@subcontractor_at_job.equipment_labeled?) %>
         Name or logo appears on equipment
+        <br/><br/>
+        <i style="visibility: hidden;" class="font-awesome icon-check-empty" ></i>
+        <%= check_icon(@subcontractor_at_job.not_easily_removed?) %>
+        Not easily removed or replaced
     </li>
     <li><%= check_icon(@subcontractor_at_job.employees_work_elsewhere?) %>
         Employees work with other firms

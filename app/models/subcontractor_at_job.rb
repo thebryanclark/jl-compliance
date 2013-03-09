@@ -4,6 +4,7 @@ class SubcontractorAtJob < ActiveRecord::Base
                   :being_supervised,
                   :supervised_by,
                   :equipment_labeled, 
+                  :not_easily_removed,
                   :employees_work_elsewhere, 
                   :employee_count,
                   :notes
