@@ -2,6 +2,7 @@ class SubcontractorAtJob < ActiveRecord::Base
   attr_accessible :foreman_name, 
                   :foreman_directs_work, 
                   :being_supervised,
+                  :supervised_by,
                   :equipment_labeled, 
                   :employees_work_elsewhere, 
                   :employee_count,

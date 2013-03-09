@@ -6,7 +6,12 @@
     <li><%= "# of Employees present: #{@subcontractor_at_job.employee_count}" %></li>
     <li><%= check_icon(@subcontractor_at_job.foreman_directs_work) %> Foreman directs work </li>
     <li><%= check_icon(@subcontractor_at_job.being_supervised?) %>
-        Is being supervised
+        Is being supervised (own foreman / super / PM / other)
+        <br/>
+        <i style="visibility: hidden;" class="font-awesome icon-check-empty" ></i>
+        by:
+        <%= @subcontractor_at_job.supervised_by.present? ?
+            @subcontractor_at_job.supervised_by : "__________" %> 
     </li>
     <li><%= check_icon(@subcontractor_at_job.equipment_labeled?) %>
         Name or logo appears on equipment
