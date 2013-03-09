@@ -8,6 +8,7 @@ class SubcontractorAtJob < ActiveRecord::Base
                   :employees_work_elsewhere, 
                   :employee_count,
                   :notes
+  serialize :employee_names, Array
 
   has_many :equipment, inverse_of: :subcontractor_at_job
   accepts_nested_attributes_for :equipment, allow_destroy: true

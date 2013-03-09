@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130309223907) do
+ActiveRecord::Schema.define(:version => 20130309231729) do
 
   create_table "equipment", :force => true do |t|
     t.string   "title",                   :null => false
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20130309223907) do
     t.integer  "subcontractor_id",                            :null => false
     t.string   "supervised_by"
     t.boolean  "not_easily_removed",       :default => false, :null => false
+    t.text     "employee_names"
   end
 
   create_table "subcontractor_trucks", :force => true do |t|

@@ -2,16 +2,29 @@
   
   <li data-role="list-divider">Information</li>
   <li><div><ul data-role="listview">
-    <li><%=           "Foreman: #{@subcontractor_at_job.foreman_name}" %></li>
-    <li><%= "# of Employees present: #{@subcontractor_at_job.employee_count}" %></li>
+    <li>Foreman:
+      <span class="nonbold"><%= @subcontractor_at_job.foreman_name %></span>
+    </li>
+    <li># of Employees present: 
+      <span class="nonbold"><%= @subcontractor_at_job.employee_count %></span>
+    </li>
+    <li>Employee names: 
+      <span class="nonbold">
+        <% @subcontractor_at_job.employee_names.each do |n| %>
+          <%= n %> 
+        <% end %> 
+      </span>
+    </li>
     <li><%= check_icon(@subcontractor_at_job.foreman_directs_work) %> Foreman directs work </li>
     <li><%= check_icon(@subcontractor_at_job.being_supervised?) %>
         Is being supervised (own foreman / super / PM / other)
         <br/><br/>
         <i style="visibility: hidden;" class="font-awesome icon-check-empty" ></i>
         by:
+        <span class="nonbold">
         <%= @subcontractor_at_job.supervised_by.present? ?
             @subcontractor_at_job.supervised_by : "__________" %> 
+        </span>
     </li>
     <li><%= check_icon(@subcontractor_at_job.equipment_labeled?) %>
         Name or logo appears on equipment

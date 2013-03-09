@@ -46,3 +46,11 @@ span.custom-button-icon {
   width:          80%;
   margin:         auto;
 }
+
+.nonbold {
+  font-weight: normal;
+}
+
+/*.ui-btn-up-c {
+  font-weight: normal;
+}*/
