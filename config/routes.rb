@@ -70,6 +70,6 @@ JlCompliance::Application.routes.draw do
 
   resources :subcontractor_at_jobs, only: :show
   resources :subcontractor_trucks, only: :show
-  resources :photos, only: :show
+  resources :photos, only: [:show, :create]
 
 end

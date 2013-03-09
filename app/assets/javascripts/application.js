@@ -15,3 +15,30 @@
 //= require_tree .
 //= require cordova-2.3.0
 //= require jquery.mobile-1.2.0
+
+uploadSuccess = function(responseData)
+{
+  $.mobile.loading('hide');
+};
+
+uploadPhotoFn = function(targetPath)
+{
+  return function(photoPath)
+  {
+    var options = new FileUploadOptions();
+    options.fileKey = "image";
+    options.fileName = photoPath.substr(photoPath.lastIndexOf('/')+1);
+
+    $.mobile.loading('show', { text: 'Uploading Photo', textVisible: true });
+    new FileTransfer().upload(photoPath, targetPath, uploadSuccess, uploadSuccess, options);
+  };
+};
+
+$('[data-photo-target]').live('tap', function(e) {
+  successHandler = uploadPhotoFn( $(e.currentTarget).data('photo-target') );
+  navigator.camera.getPicture(
+    successHandler,
+    function(msg){ alert('Error taking photo: ' + msg);},
+    { quality : 75 }
+  );
+});
