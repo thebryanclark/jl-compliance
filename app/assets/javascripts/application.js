@@ -29,6 +29,7 @@ uploadPhotoFn = function(targetPath)
     var options = new FileUploadOptions();
     options.fileKey = "image";
     options.fileName = photoPath.substr(photoPath.lastIndexOf('/')+1);
+    options.params = { gcm_registration_id: window.gApp.gcmregid }
 
     $.mobile.loading('show', { text: 'Uploading Photo', textVisible: true });
     new FileTransfer().upload(photoPath, targetPath, uploadSuccess, uploadSuccess, options);
@@ -43,3 +44,5 @@ $('[data-photo-target]').live('tap', function(e) {
     { quality : 75 }
   );
 });
+
+$('a.tappy').live('tap', function() { alert(GCM_go); GCM_go(); });

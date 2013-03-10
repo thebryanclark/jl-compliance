@@ -4,7 +4,7 @@
 <title>Judlau Compliance</title>
   <script src="http://debug.phonegap.com/target/target-script-min.js#jl-compliance"></script>
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <%= javascript_include_tag "application" %>
+  <script src="/assets/application.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
     <link rel="stylesheet" 
@@ -26,6 +26,12 @@
   <div data-role="content"> 
     <%= yield %>
   </div>
+
+  <a class="tappy" href="#">Click me</a>
+
+  <ul id="app-status-ul">
+    <li>Fucking GCM stuff</li>
+  </ul>
 
   <% unless @suppress_footer -%>
     <div data-role="footer" data-position="fixed">
