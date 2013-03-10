@@ -15,6 +15,7 @@
 //= require_tree .
 //= require cordova-2.3.0
 //= require jquery.mobile-1.2.0
+//= require GCMPlugin
 
 uploadSuccess = function(responseData)
 {
