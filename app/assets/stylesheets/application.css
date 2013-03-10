@@ -47,6 +47,10 @@ span.custom-button-icon {
   margin:         auto;
 }
 
+.ui-content {
+  padding: 0px 15px;
+}
+
 .nonbold {
   font-weight: normal;
 }

@@ -1,7 +1,6 @@
-<ul data-role="listview">
-  
-  <li data-role="list-divider">Information</li>
-  <li><div><ul data-role="listview">
+<div data-role="collapsible" data-inset="false" data-theme="b" data-collapsed="false">
+  <h1>Information</h1>
+  <ul data-role="listview">
     <li>Foreman:
       <span class="nonbold"><%= @subcontractor_at_job.foreman_name %></span>
     </li>
@@ -36,31 +35,41 @@
     <li><%= check_icon(@subcontractor_at_job.employees_work_elsewhere?) %>
         Employees work with other firms
     </li>
-  </ul></div></li>
-  
-  <li data-role="list-divider">Notes</li>
-  <li><%= @subcontractor_at_job.notes.present? ? 
-          @subcontractor_at_job.notes : 'No notes entered' %>
-  </li>
+  </ul>
+</div>
 
-  <li data-role="list-divider">Equipment</li>
-  <li><div><ul data-role="listview" data-inset="true">
+<div data-role="collapsible" data-inset="false" data-theme="b" data-collapsed="false">
+  <h1>Notes</h1>
+  <%= @subcontractor_at_job.notes.present? ? 
+      @subcontractor_at_job.notes : 'No notes entered' %>
+</div>
+
+<div data-role="collapsible" data-inset="false" data-theme="b" data-collapsed="false">
+  <h1>Equipment</h1>
+  <div data-role="collapsible-set">
     <% if @subcontractor_at_job.equipment.blank? %>
-      <li>No equipment on record</li>
+      <div>No equipment on record</div>
     <% end %> 
     <% @subcontractor_at_job.equipment.all.each do |anequipment| %> 
-      <li><%= anequipment.title %></li>
+      <div data-role="collapsible">
+        <h1><%= anequipment.title %></h1>
+        <p> <%= anequipment.notes %></p>
+      </div>
     <% end %> 
-  </ul></div></li>
-  
-  <li data-role="list-divider">Scopes</li>
-  <li><div><ul data-role="listview" data-inset="true">
+  </div>
+</div>
+
+<div data-role="collapsible" data-inset="false" data-theme="b" data-collapsed="false">
+  <h1>Scopes</h1>
+  <div data-role="collapsible-set">
     <% if @subcontractor_at_job.scopes.blank? %>
-      <li>No scopes on record</li>
+      <div>No scopes on record</div>
     <% end %> 
     <% @subcontractor_at_job.scopes.all.each do |scope| %> 
-      <li><%= scope.title %></li>
+      <div data-role="collapsible">
+        <h1><%= scope.title %></h1>
+        <p> <%= scope.notes %></p>
+      </div>
     <% end %> 
-  </ul></div></li>
-
-</ul>
+  </ul>
+</div>

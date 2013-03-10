@@ -1,5 +1,6 @@
 class Equipment < ActiveRecord::Base
-  attr_accessible :title
+  attr_accessible :title,
+                  :notes
 
   belongs_to :subcontractor_at_job, inverse_of: :equipment
   attr_accessible :subcontractor_at_job_id
