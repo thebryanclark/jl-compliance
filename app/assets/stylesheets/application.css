@@ -47,8 +47,8 @@ span.custom-button-icon {
   margin:         auto;
 }
 
-.ui-content {
-  padding: 0px 15px;
+.negative-top-margin {
+  margin: -15px 0px 0px 0px;
 }
 
 .nonbold {
