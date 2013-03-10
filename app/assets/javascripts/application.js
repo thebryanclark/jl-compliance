@@ -15,13 +15,14 @@
 //= require_tree .
 //= require cordova-2.3.0
 //= require jquery.mobile-1.2.0
+//= require jquery.tinysort.min
 
 uploadSuccess = function(responseData)
 {
   $.mobile.loading('hide');
 };
 
-uploadPhotoFn = function(targetPath)
+buildUploadPhotoFn = function(targetPath)
 {
   return function(photoPath)
   {
@@ -35,7 +36,7 @@ uploadPhotoFn = function(targetPath)
 };
 
 $('[data-photo-target]').live('tap', function(e) {
-  successHandler = uploadPhotoFn( $(e.currentTarget).data('photo-target') );
+  successHandler = buildUploadPhotoFn( $(e.currentTarget).data('photo-target') )
   navigator.camera.getPicture(
     successHandler,
     function(msg){ alert('Error taking photo: ' + msg);},

@@ -11,6 +11,7 @@
  *= require_self
  *= require_tree .
  *= require font-awesome.min.css
+ *= require jquery.mobile-1.2.0.min.css
  */
 .item_info {
   font-weight: normal;
