@@ -1,15 +1,16 @@
-<form>
-<fieldset data-role="controlgroup" data-type="horizontal" > 
-  <legend>Order by:</legend>
-  <input type="radio" name="order-toggle" id="radio-choice-1" value="driver_name" 
-  checked="checked" />
-  <label for="radio-choice-1">Driver Name</label>
+<div class="negative-top-margin" />
 
-  <input type="radio" name="order-toggle" id="radio-choice-2" value="plate" />
-  <label for="radio-choice-2">Plate#</label>
-</fieldset>
-</form>
-
+<select id="subcontractor-filter" data-icon="search" data-iconpos="left">
+   <option>All Subcontractors</option>
+   <option>X</option>
+   <option>Y</option>
+   <option>Z</option>
+</select>
+<select id="trucker-sort-by" data-icon="resize-vertical" data-iconpos="left">
+   <option value="div.driver_name" data-attr="data-lastname">Sort by Driver Name</option>
+   <option value="div.plate">Sort by Plate Number</option>
+</select>
+<p />
 <ul data-role="listview" id="sortlist" data-inset="true" 
 data-filter="true" data-filter-placeholder="Enter name or plate...">
   <% @subcontractor_trucks.each do |subcontractor_truck| %> 
@@ -31,12 +32,10 @@ data-filter="true" data-filter-placeholder="Enter name or plate...">
 
 
 $(document).ready(function() {
-  $('input#radio-choice-1').live('change', function() {
-    $('ul#sortlist>li').tsort('div.driver_name', {attr: 'data-lastname'});
+  $('#trucker-sort-by').live('change', function(e) {
+    option = $(e.target.selectedOptions);
+    $('ul#sortlist>li').tsort(option.val(), option.data());
   });
-  $('input#radio-choice-2').live('change', function() {
-    $('ul#sortlist>li').tsort('div.plate');
-  });
-  $('input#radio-choice-1').change();
+  $('#trucker-sort-by').change();
 });
 </script>
