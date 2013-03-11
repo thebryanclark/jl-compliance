@@ -28,12 +28,15 @@ data-filter="true" data-filter-placeholder="Enter name or plate...">
 
 
 <script>
+
+
 $(document).ready(function() {
-  $('input#radio-choice-1').tap(function() {
-    $('ul#sortlist>li').tsort(div.driver_name, {attr: 'data-lastname'});
+  $('input#radio-choice-1').live('change', function() {
+    $('ul#sortlist>li').tsort('div.driver_name', {attr: 'data-lastname'});
   });
-  $('input#radio-choice-2').tap(function() {
-    $('ul#sortlist>li').tsort(div.plate);
+  $('input#radio-choice-2').live('change', function() {
+    $('ul#sortlist>li').tsort('div.plate');
   });
+  $('input#radio-choice-1').change();
 });
 </script>
